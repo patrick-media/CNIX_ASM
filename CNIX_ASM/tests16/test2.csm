@@ -1,0 +1,9 @@
+mov #DEAD, $1
+mov %xa, #DEAD
+mov %xb, $AF
+mov %xd, $2
+add %xa, %xb
+push %xa
+pop %xc
+loop: mov %pc, loop
+d "eof"

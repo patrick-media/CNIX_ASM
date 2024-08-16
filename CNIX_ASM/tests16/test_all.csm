@@ -1,0 +1,33 @@
+mov %a, %b
+mov %a, $FF
+mov #FEEA, "j"
+mov #FEEA, #FEEB
+add %cp, %cp
+add #FEEA, #FEEB
+sub %b, %a
+sub #FEEA, #FEEB
+mul %b, %a
+mul #FEEA, #FEEB
+div %sp, %ep
+div #FEEA, #FEEB
+shl %c
+shl #FEEA
+shr %d
+shr #FEEA
+in %xb, #FEEA
+in #FEEB, #FEEA
+out #FEEA, %xc
+out #FEEA, $FE
+out #FEEA, "o"
+out #FEEA, #FEEB
+cmp %xd, %xc
+cmp $FE, $FA
+cmp "e", "y"
+cmp #FEEA, #FEEB
+push %pc
+push $FE
+push "h"
+push #FEEA
+pop %fl
+pop #FEEA
+d "eof"
